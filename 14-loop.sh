@@ -15,6 +15,16 @@ ROOT_CHECK(){
 }
 ROOT_CHECK
 
+USAGE(){
+    echo "USAGE:: sudo sh 14-loop.sh package1 package2"
+    exit
+}
+
+if [ $# -eq 0 ]
+then
+    USAGE
+exit
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
