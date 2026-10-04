@@ -1,8 +1,8 @@
 #!/bin/bash
 R="\e[31m"
-G="\[32m"
-Y="\[33m"
-N="\[0m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
 SOUR_DIR="/home/ec2-user/log"    #ask source directory where log files are present
 
