@@ -11,7 +11,7 @@ LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME-$TIME_STAMP.log"
 mkdir -p $LOG_FOLDER 
 
 ROOT_CHECK(){
-    USER_ID=(id -u)
+    USER_ID=$(id -u)
     if [ $USER_ID -ne 0 ]
     then
         echo -e "$R please run the script with root user privileges $N"   | tee -a $LOG_FILE
