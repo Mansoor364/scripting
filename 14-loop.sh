@@ -16,7 +16,7 @@ ROOT_CHECK(){
 ROOT_CHECK
 
 USAGE(){
-    echo "USAGE:: sudo sh 14-loop.sh package1 package2"
+    echo -e "$R USAGE:: $N sudo sh 14-loop.sh package1 package2"
     exit
 }
 
