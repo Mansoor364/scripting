@@ -71,7 +71,7 @@ cp /home/ec2-user/scripting/backend.service /etc/systemd/system/backend.service
 dnf install mysql -y      &>>$$LOG_FILE
 VALIDATE $? "Installing mysql client"
 
-mysql -h mysql.muntaj.fun -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h mysql.muntaj.fun -uroot -pExpenseApp@1 < /app/schema/backend.sql  &>>$$LOG_FILE
 VALIDATE $? "Schema loading"
 
 systemctl daemon-reload       &>>$$LOG_FILE
