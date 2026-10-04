@@ -31,7 +31,7 @@ then
     exit 1
 fi
 
-FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
+FILES=$(find $SOUR_DIR -name "*.log" -mtime +$DAYS)
 echo -e "log files are :$Y $FILES $N "
 
 if [ ! -z $FILES ]
