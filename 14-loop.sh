@@ -23,7 +23,7 @@ USAGE(){
 if [ $# -eq 0 ]
 then
     USAGE
-exit
+fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]
