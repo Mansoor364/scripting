@@ -13,7 +13,7 @@ ROOT_CHECK(){
         exit 1
     fi
 }
-ROOT_CHECK()
+ROOT_CHECK
 
 VALIDATE(){
     if [ $1 -ne 0 ]
