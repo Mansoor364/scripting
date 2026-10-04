@@ -18,7 +18,7 @@ echo -e "log files older than 14 days are :$Y $FILES $N"
 
 while IFS= read -r file
 do
-    echo -e " $Y deleting line :$N  $file"
+    echo -e "$Y deleting line :$N $file"
     rm -rf $file
 done <<< $FILES
 
