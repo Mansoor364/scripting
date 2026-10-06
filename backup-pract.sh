@@ -43,6 +43,11 @@ then
     if [ -f $ZIP_FILE ]
     then
         echo -e "zipping log file's is $G successfull $N"
+        while IFS= read -r file
+        do
+            echo "deleting line : $file"
+            rm -rf $file
+        done <<<$FILES
     else
         echo "Zipping log files older than $DAYS is $R failed $N"
     fi
