@@ -45,7 +45,7 @@ then
         echo -e "zipping log file's is $G successfull $N"
         while IFS= read -r file
         do
-            echo "deleting line : $file"
+            echo -e "deleting line :$Y $file $N"
             rm -rf $file
         done <<<$FILES
     else
